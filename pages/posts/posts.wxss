@@ -21,10 +21,26 @@ swiper image {
 
 .post-author-date {
   margin: 10rpx 0 20rpx 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .post-author {
   width: 60rpx;
   height: 60rpx;
-  vertical-align: middle;
+  /* vertical-align: middle; */
+}
+
+.post-date {
+  margin-left: 20rpx;
+  /* vertical-align: middle; */
+}
+
+.post-title {
+  font-size: 34rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  color: #333;
 }
