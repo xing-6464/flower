@@ -10,4 +10,14 @@
       <image src="/images/jumpfly.png" />
     </swiper-item>
   </swiper>
+  <view>
+    <view>
+      <image></image>
+      <text></text>
+    </view>
+    <text></text>
+    <image></image>
+    <text></text>
+    <view></view>
+  </view>
 </view>
