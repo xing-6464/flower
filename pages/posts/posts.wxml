@@ -3,7 +3,11 @@
     <swiper-item>
       <image src="/images/bestplayers.png" />
     </swiper-item>
-    <swiper-item>Content 2</swiper-item>
-    <swiper-item>Content 3</swiper-item>
+    <swiper-item>
+      <image src="/images/lpl.png" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/jumpfly.png" />
+    </swiper-item>
   </swiper>
 </view>
