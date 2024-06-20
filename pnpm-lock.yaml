@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      lin-ui:
+        specifier: ^0.9.13
+        version: 0.9.13
+
+packages:
+
+  lin-ui@0.9.13:
+    resolution: {integrity: sha512-RFRq1D+jCkhFzVCe/Y4C/NnWEK21ZiY961/HJR3mHmHmdq5IkrNBt/39WsUuWcDPty48WaY/3IipOPBBD+7ttw==}
+
+snapshots:
+
+  lin-ui@0.9.13: {}
