@@ -1,10 +1,11 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/posts/posts"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarBackgroundColor": "#b3d4db"
+    "navigationBarBackgroundColor": "#C22A1E"
   },
   "style": "v2",
   "componentFramework": "glass-easel",
