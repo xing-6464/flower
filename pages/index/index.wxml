@@ -1,0 +1,8 @@
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <image src="/images/avatar/1.png" class="avatar" />
+  <text>Hello, xing</text>
+  <view>
+    <text>开启小程序之旅吧</text>
+  </view>
+</view>
