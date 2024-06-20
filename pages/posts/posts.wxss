@@ -7,3 +7,24 @@ swiper image {
   width: 100%;
   height: 460rpx;
 }
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin-top: 40rpx;
+  background-color: #fff;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 10rpx;
+}
+
+.post-author-date {
+  margin: 10rpx 0 20rpx 10rpx;
+}
+
+.post-author {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}

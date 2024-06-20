@@ -10,10 +10,10 @@
       <image src="/images/jumpfly.png" />
     </swiper-item>
   </swiper>
-  <view>
-    <view>
-      <image src="/images/avatar/3.png"></image>
-      <text>Nov 18 2020</text>
+  <view class="post-container">
+    <view class="post-author-date">
+      <image class="post-author" src="/images/avatar/3.png"></image>
+      <text class="post-date">Nov 18 2020</text>
     </view>
     <text>2020LPL夏季赛季后赛观赛指南</text>
     <image src="/images/lpl.png"></image>
