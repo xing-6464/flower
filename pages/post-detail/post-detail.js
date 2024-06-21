@@ -7,7 +7,7 @@ Page({
   },
   onCollect(event) {
     wx.setStorageSync("posts_collected", {
-      [this.data.pid]: true,
+      [this.data._pid]: true,
     })
   },
   onLoad(options) {
