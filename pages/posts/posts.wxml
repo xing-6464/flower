@@ -26,5 +26,6 @@
       <image class="post-like-image" src="/images/icon/view.png" />
       <text class="post-like-font">102</text>
     </view>
+    <l-icon size="128" color="#a20" name="cart" />
   </view>
 </view>
