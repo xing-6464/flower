@@ -7,17 +7,26 @@ Page({
     _pid: null,
     _postCollected: null,
   },
-  onCollect(event) {
-    const postsCollected = this.data._postCollected
-    postsCollected[this.data._pid] = !this.data.collected
+  async onCollect(event) {
+    // const postsCollected = this.data._postCollected
+    // postsCollected[this.data._pid] = !this.data.collected
 
-    wx.setStorageSync("posts_collected", postsCollected)
-    wx.showToast({
-      title: this.data.collected ? "取消收藏" : "收藏成功",
+    // wx.setStorageSync("posts_collected", postsCollected)
+    // wx.showToast({
+    //   title: this.data.collected ? "取消收藏" : "收藏成功",
+    // })
+    const result = await wx.showModal({
+      title: "是否收藏文件",
     })
-    this.setData({
-      collected: !this.data.collected,
-    })
+    if (result.confirm) {
+      const postsCollected = this.data._postCollected
+      postsCollected[this.data._pid] = !this.data.collected
+
+      wx.setStorageSync("posts_collected", postsCollected)
+      this.setData({
+        collected: !this.data.collected,
+      })
+    }
   },
   onLoad(options) {
     const postData = postList[options.pid]
