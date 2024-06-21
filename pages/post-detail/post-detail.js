@@ -17,8 +17,12 @@ Page({
   onLoad(options) {
     const postData = postList[options.pid]
     this.data._pid = options.pid
+    const postsCollected = wx.getStorageSync("posts_collected")
+    const collected = postsCollected[this.data._pid]
+
     this.setData({
       postData,
+      collected,
     })
   },
   onReady() {},
