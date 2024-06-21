@@ -28,6 +28,12 @@ Page({
       })
     }
   },
+  async onShare(event) {
+    const result = await wx.showActionSheet({
+      itemList: ["微信到微信"],
+    })
+    console.log(result)
+  },
   onLoad(options) {
     const postData = postList[options.pid]
     this.data._pid = options.pid
