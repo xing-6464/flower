@@ -2,7 +2,7 @@
 <view class="container">
   <l-avatar src="/images/avatar/1.png" placement="bottom" size="180" class="l-avatar-text" />
   <text class="motto">Hello, xing</text>
-  <view class="journey-container">
+  <view class="journey-container" bind:tap="onTap">
     <text class="journey">开启小程序之旅吧</text>
   </view>
 </view>
