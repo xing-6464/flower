@@ -47,6 +47,13 @@
   justify-content: center;
 }
 
+.circle {
+  display: flex;
+  width: 660rpx;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .title {
   margin-left: 40rpx;
   font-size: 36rpx;
@@ -66,4 +73,5 @@
   height: 1px;
   background-color: #e5e5e5;
   position: absolute;
+  z-index: -99;
 }
