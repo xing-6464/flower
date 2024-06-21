@@ -13,13 +13,6 @@ Page({
     console.log("onGoToUser")
   },
   onLoad(options) {
-    wx.setStorageSync("flag", true)
-    wx.setStorageSync("name", "92549")
-    // wx.clearStorageSync()
-    // wx.removeStorageSync('name')
-    const flag = wx.getStorageSync("flag")
-    console.log(flag)
-
     this.setData({
       postList,
     })
