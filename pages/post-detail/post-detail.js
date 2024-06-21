@@ -3,17 +3,16 @@ import { postList } from "../../data/data"
 Page({
   data: {
     postData: {},
-    _pid: null,
     collected: false,
+    _pid: null,
+    _postCollected: null,
   },
   onCollect(event) {
-    const postsCollected = wx.getStorageSync("posts_collected") || {}
-    wx.setStorageSync("posts_collected", {
-      ...postsCollected,
-      [this.data._pid]: true,
-    })
+    const postsCollected = this.data._postCollected
+    postsCollected[this.data._pid] = !this.data.collected
+    wx.setStorageSync("posts_collected", postsCollected)
     this.setData({
-      collected: true,
+      collected: !this.data.collected,
     })
   },
   onLoad(options) {
@@ -25,6 +24,7 @@ Page({
     this.setData({
       postData,
       collected,
+      _postCollected: postsCollected || {},
     })
   },
   onReady() {},
