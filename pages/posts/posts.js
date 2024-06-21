@@ -4,9 +4,9 @@ console.log(postList)
 Page({
   data: {},
   onGoToDetail(event) {
-    console.log(event)
+    const pid = event.currentTarget.dataset.postId
     wx.navigateTo({
-      url: "/pages/post-detail/post-detail",
+      url: `/pages/post-detail/post-detail?pid=${pid}`,
     })
   },
   onGoToUser(event) {

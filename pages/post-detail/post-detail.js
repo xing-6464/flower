@@ -1,25 +1,15 @@
 Page({
-  data: {
-
-  },
+  data: {},
   onLoad(options) {
-
+    console.log(options)
   },
-  onReady() {
-
-  },
-  onShow() {
-
-  },
-  onHide() {
-
-  },
-  onUnload() {
-
-  },
+  onReady() {},
+  onShow() {},
+  onHide() {},
+  onUnload() {},
   onShareAppMessage() {
     return {
-      title: '',
-    };
+      title: "",
+    }
   },
-});
+})
