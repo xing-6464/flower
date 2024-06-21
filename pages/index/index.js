@@ -5,7 +5,6 @@ Page({
    */
   data: {},
   onTap() {
-    console.log("onTap")
     wx.redirectTo({
       url: "/pages/posts/posts",
     })

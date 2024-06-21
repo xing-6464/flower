@@ -1,5 +1,4 @@
 import { postList } from "../../data/data.js"
-console.log(postList)
 
 Page({
   data: {},
