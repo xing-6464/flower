@@ -7,6 +7,11 @@ Page({
     _pid: null,
     _postCollected: null,
   },
+  onMusic(event) {
+    const mgr = wx.getBackgroundAudioManager()
+    mgr.src = postList[0].music.url
+    mgr.title = postList[0].music.title
+  },
   async onCollect(event) {
     // const postsCollected = this.data._postCollected
     // postsCollected[this.data._pid] = !this.data.collected
@@ -32,7 +37,6 @@ Page({
     const result = await wx.showActionSheet({
       itemList: ["微信到微信"],
     })
-    console.log(result)
   },
   onLoad(options) {
     const postData = postList[options.pid]

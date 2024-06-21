@@ -4,6 +4,7 @@
     "pages/posts/posts",
     "pages/post-detail/post-detail"
   ],
+  "requiredBackgroundModes": ["audio", "location"],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarBackgroundColor": "#C22A1E"

@@ -95,5 +95,5 @@
   left: 50%;
   top: 230rpx;
   transform: translate(-50%, -50%);
-  /* top: 50%; */
+  opacity: .6;
 }
