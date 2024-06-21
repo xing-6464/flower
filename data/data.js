@@ -1,4 +1,4 @@
-const postList = [
+export const postList = [
   {
     title: "2020LPL夏季赛季后赛观赛指南",
     content:
@@ -112,8 +112,6 @@ const postList = [
     },
   },
 ]
-
-export { postList }
 
 // module.exports = {
 //   postList:local_database
