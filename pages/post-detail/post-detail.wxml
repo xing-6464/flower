@@ -1,15 +1,15 @@
 <view class="container">
-  <image src=""></image>
+  <image src="/images/bestplayers.png"></image>
   <view>
-    <image></image>
-    <text></text>
+    <image src="/images/avatar/2.png"></image>
+    <text>星光</text>
     <text>发表于</text>
-    <text></text>
+    <text>16小时前</text>
   </view>
-  <text></text>
+  <text>LPL夏季赛最佳阵容</text>
   <view>
-    <image></image>
-    <image></image>
+    <image src="/images/icon/share.png"></image>
+    <image src="/images/icon/collection.png"></image>
   </view>
-  <text></text>
+  <text>8月9号，LPL常规赛收官之战结束，在事关季后赛轮次的比赛中关键对局中，SN</text>
 </view>
