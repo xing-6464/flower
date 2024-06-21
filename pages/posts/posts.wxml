@@ -13,7 +13,7 @@
   <block wx:for="{{postList}}" wx:for-item="item" wx:key="postId">
     <view class="post-container" bind:tap="onGoToDetail">
       <view class="post-author-date">
-        <image class="post-author" src="{{item.avatar}}"></image>
+        <image catch:tap="onGoToUser" class="post-author" src="{{item.avatar}}"></image>
         <text class="post-date">{{item.date}}</text>
       </view>
       <text class="post-title">{{itme.title}}</text>

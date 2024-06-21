@@ -8,6 +8,9 @@ Page({
       url: "/pages/post-detail/post-detail",
     })
   },
+  onGoToUser(event) {
+    console.log("onGoToUser")
+  },
   onLoad(options) {
     this.setData({
       postList,
