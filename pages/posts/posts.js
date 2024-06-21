@@ -4,6 +4,7 @@ console.log(postList)
 Page({
   data: {},
   onGoToDetail(event) {
+    console.log(event)
     wx.navigateTo({
       url: "/pages/post-detail/post-detail",
     })
