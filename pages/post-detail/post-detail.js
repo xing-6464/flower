@@ -1,7 +1,14 @@
+import { postList } from "../../data/data"
+
 Page({
-  data: {},
+  data: {
+    postData: {},
+  },
   onLoad(options) {
-    console.log(options)
+    const postData = postList[options.pid]
+    this.setData({
+      postData,
+    })
   },
   onReady() {},
   onShow() {},
