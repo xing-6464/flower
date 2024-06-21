@@ -10,7 +10,11 @@ Page({
   onCollect(event) {
     const postsCollected = this.data._postCollected
     postsCollected[this.data._pid] = !this.data.collected
+
     wx.setStorageSync("posts_collected", postsCollected)
+    wx.showToast({
+      title: this.data.collected ? "取消收藏" : "收藏成功",
+    })
     this.setData({
       collected: !this.data.collected,
     })
