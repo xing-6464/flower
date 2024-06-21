@@ -11,12 +11,23 @@ importers:
       lin-ui:
         specifier: ^0.9.13
         version: 0.9.13
+    devDependencies:
+      prettier:
+        specifier: ^3.3.2
+        version: 3.3.2
 
 packages:
 
   lin-ui@0.9.13:
     resolution: {integrity: sha512-RFRq1D+jCkhFzVCe/Y4C/NnWEK21ZiY961/HJR3mHmHmdq5IkrNBt/39WsUuWcDPty48WaY/3IipOPBBD+7ttw==}
 
+  prettier@3.3.2:
+    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+    engines: {node: '>=14'}
+    hasBin: true
+
 snapshots:
 
   lin-ui@0.9.13: {}
+
+  prettier@3.3.2: {}
