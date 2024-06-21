@@ -4,10 +4,14 @@ Page({
   data: {
     postData: {},
     _pid: null,
+    collected: false,
   },
   onCollect(event) {
     wx.setStorageSync("posts_collected", {
       [this.data._pid]: true,
+    })
+    this.setData({
+      collected: true,
     })
   },
   onLoad(options) {
